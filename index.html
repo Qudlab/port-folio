@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #FF851B;
+        }
+
+        header {
+            background-color: #001F3F;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .portfolio-item {
+            flex: 1 1 calc(33.33% - 20px);
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            border-radius: 8px;
+        }
+
+        p{
+            font-size: large;
+        }
+
+        .skills{
+            font-size: large;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .portfolio-item .overlay h3 {
+            color: #fff;
+            margin: 0;
+        }
+
+        
+
+        footer {
+            background-color: #001F3F;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>["Your Ideas, Elevated: Web Development that Speaks."]</p>
+    </header>
+
+    <section>
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="./Images/Retouch_20231219_173210841.png" alt="Person Image">
+                <div class="overlay">
+                  
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello, I am Abdulqudus Alabi, a multifaceted individual navigating the journey of life with a passion for IT. My story is an ever-evolving tapestry woven with threads of curiosity, resilience, and a relentless pursuit of personal and professional growth.
+                <br>One of my defining characteristics is my insatiable curiosity. From a young age, I found joy in exploring the world around me, always eager to understand how things work and why they matter. This innate curiosity has been a driving force behind my academic pursuits and professional endeavors.
+                <br>In the realm of Website Development, I have cultivated a deep understanding of HTML, CSS and JavaScript. Whether it's delving into complex problem-solving or embracing the creative aspects of Website Development, I approach challenges with a blend of analytical thinking and innovative flair.
+                <br>Aside from my academic and professional pursuits, I find fulfillment in Graphics Designing. These activities not only provide a welcomed respite from the demands of daily life but also contribute to my holistic development. I believe in the importance of maintaining a balance between work and personal interests, as it fuels creativity and fosters a well-rounded perspective.          
+                <br>Resilience is another pillar of my character. Life has presented its share of obstacles, each of which has served as a stepping stone rather than a stumbling block. Adversity has shaped me into someone who embraces challenges with a positive mindset, using them as catalysts for personal and professional improvement.
+                <br>As I look toward the future, I am fueled by a commitment to continuous learning and self-improvement, leveraging my skills and experiences to make a meaningful impact in your company. The journey of self-discovery is ongoing, and I am excited about the opportunities and growth that lie ahead.
+                <br>In essence, I am Abdulqudus Alabi, an individual on a journey of exploration, learning, and contribution. My story is still unfolding, with each chapter adding depth to the narrative of a life driven by passion, curiosity, and the unwavering belief that the best is yet to come.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>WatchPhone Website</h3>
+                <h4><b>Description:</b></h4>
+                <p>Welcome to SyncChrono, your premier destination for the perfect fusion of timeless sophistication and cutting-edge technology. Explore our curated collection of exquisite watches, ranging from heritage classics to smart horizons, each embodying the pinnacle of craftsmanship and style. Complementing our watch selection is a diverse array of smartphones, from photography delights capturing life's moments to productivity champions enhancing work and play. With a sleek and intuitive interface, SyncChrono offers a seamless browsing experience, providing detailed product information, high-resolution images, and customer reviews. Whether you seek a refined timepiece or the latest in mobile innovation, SyncChrono is your go-to hub, where tradition meets the future in a harmonious blend of elegance and connectivity.
+            </p>
+            </div>
+            <div class="project2">
+                <h3>ClothingStore</h3>
+                <h4><b>Description:</b></h4>
+                <p>Welcome to FashionFiesta, your online haven for curated fashion that seamlessly blends style, comfort, and affordability. Step into a virtual wardrobe where trends come to life, and individuality is celebrated. From chic essentials to statement pieces, FashionFiesta offers a diverse range of clothing to suit every taste and occasion. Our user-friendly website ensures a delightful shopping experience, featuring intuitive navigation, detailed product descriptions, and a secure checkout process. Discover the latest fashion-forward collections, explore styling tips through our blog, and redefine your wardrobe effortlessly. FashionFiesta is not just a clothing store; it's a destination where fashion enthusiasts can express their unique style and embrace the ever-evolving world of trends.
+            </div>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <p>Copyright © 2023 Alabi Abdulqudus. All right reserved.</p>
+    </footer>
+
+</body>
+</html>
